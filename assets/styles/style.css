@@ -1,0 +1,190 @@
+@import url('https://fonts.google.apis.com/css2?family=Do+Hyeon&family=Open+Sans:wght@300&display=swap');
+
+
+body {
+   font-family: 'Do Hyeon', sans-serif;
+   background-image: url(../image/background.jpg);
+   height: 100vh;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+    
+ }
+
+ main {
+   padding: 20px;
+   overflow: auto;
+   color: whitesmoke;
+}
+
+.card {
+   box-shadow: 0px 0px 27px -5px rgba(250,242,250,0.68);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+ .jumbotron {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 60px;
+    color: whitesmoke;
+ }
+
+
+ nav a {
+    
+    font-size: 30px;
+    font-family: 'DO Hyeon', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: whitesmoke;
+ }
+ 
+ nav a:hover {
+   font-weight: bold;
+    
+ }
+
+ nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+ 
+ nav {
+   background-color: black;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
+ header{
+   display: inline;
+}
+
+ .featured-image {
+   width: 100%;
+   max-height: 300px;
+   object-fit: contain;
+   object-position: center;
+}
+
+ #content {
+   float: left;
+   width: 75%;
+}
+
+ aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+   color: whitesmoke;
+}
+
+.Profile {
+   text-align: center;
+   border-radius: 5px;
+}
+
+ .Profile-image {
+    width: 150px;
+ }
+
+ footer {
+   padding: 16px;
+   color: white;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+
+
+.flex-container-column {
+   display: flex;
+   flex-direction: column;
+ 
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: right;
+}
+
+.flex-container-row {
+   display: flex;
+}
+
+.button {
+   flex-basis: 25%;
+  
+   font-size: 1.5em;
+   text-align: center;
+   padding: 40px;
+   border: 1px solid black;
+   background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+   cursor: pointer;
+}
+
+.double {
+   flex-basis: 50%;
+}
+
+.display {
+   color: white;
+   width: 100%;
+   padding: 10px 20px;
+   background-color: #333333;
+   border: 1px solid black;
+   font-size: 2em;
+}
+
+.operator,
+.negative,
+.equals {
+   background: orange;
+}
+
+
+.button:hover {
+   font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+th {
+  background-color: orange;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+@media screen and (max-width: 513px) {
+   .button {
+       padding: 10px;
+   }
+   .history {
+     width: 100%;
+ }
+}
+
+@media screen and (max-width: 500px) {
+   #content,
+   aside {
+      width: 100%;
+      padding: 0;
+   }
+}
